@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Forum', cursive;
+    text-align: center;
+}
+
+.intro-image {    
+    background-attachment: fixed;
+    background-image: url('../img/img2.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 950px;
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+}
+
+.intro-image__text a {
+    background-color: #d3dce379;
+    border: 2px solid #d3dce375;
+    color: #282224;
+    display: block;
+    font-size: 2rem;  
+    padding: 1.5rem;
+    text-decoration: none;  
+    text-transform: uppercase;
+    transition: all 2s ease-in-out;
+    position:  relative; /*top-right-bottom-left*/
+    animation-name: moveInTop;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInTop {
+    0% {top: -550px}
+    100% {top: -30px}
+}
+
+
+.intro-image__text a:hover {
+    transform: scale(1.5);
+}
+
+.intro-text {
+    background-color: #a5705b;
+    clip-path: polygon(39% 7%, 71% 23%, 100% 3%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 10%);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 270px;
+    margin-top: -4rem;
+    padding: 2rem;
+}
+
+.intro-text__textbox h3 {
+    color: #f1e2dc;
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+}
+
+.intro-text__textbox p {
+    padding: 0 15rem;
+}
+
+.packaging-image {
+    align-items: center;
+    background-attachment: fixed;
+    background-image: url('../img/img3.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 550px;
+    margin-top: -2rem;
+    justify-content: center;
+}
+
+.packaging-image__text a {
+    background-color: #cfaf8c6e;
+    border: 2px solid #be946b;
+    color: #282224;
+    display: inline-block;
+    font-size: 1.7rem;  
+    padding: 1.5rem;
+    text-decoration: none;  
+    text-transform: uppercase;
+    transition: all 1.5s ease-in-out;
+    position: relative;
+    animation: moveInLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInLeft {
+    0% {left: -1000px}
+    85% {left: 50px}
+    100% {left: 0}
+}
+
+.packaging-image__text a:hover {
+    transform: scale(1.5);
+}
+
+.packaging-text {
+    background-color: #85746d;
+    clip-path: polygon(35% 0, 70% 0, 100% 0, 100% 86%, 64% 96%, 28% 85%, 0 91%, 0 0);
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    margin-bottom: -3rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.packaging_text__textbox h3 {
+    color: #a6b194;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 3px #60645ad8, 0 0 5px #b7c79b15;
+}
+
+.packaging_text__textbox p {
+    padding: 0 15rem;
+}
+
+.tutorials-image {
+    align-items: center;
+    background-attachment: fixed;
+    background-image: url('../img/img1.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 550px;
+    margin-top: -2rem;
+    justify-content: center;
+}
+
+.tutorials-image__text a {
+    background-color: #a6b39a7c;
+    border: 2px solid #d3dce375;
+    color: #282224;
+    display: inline-block;
+    font-size: 2rem;  
+    padding: 1rem;
+    text-decoration: none;  
+    text-transform: uppercase;
+    transition: all 1.5s ease-in-out;
+    position: relative;
+    animation: moveInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInLeft {
+    0% {left: -1000px}
+    85% {left: 50px}
+    100% {left: 0}
+}
+
+.tutorials-image__text a:hover {
+    transform: scale(1.5);
+}
+
+.footer {
+    background-color: #dfba86;
+    font-size: 1rem;
+    height: 100px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+
+.footer ul li a {
+    color: #4b4845;;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #ce724e;
+    /*transform: scale(1.2);*/ /*footer ul li:hover*/
+}
